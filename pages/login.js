@@ -65,15 +65,15 @@ export default function Login() {
             <div className={styles.linksContainer}>
               <div className={styles.linksItem}>
                 Forgot your password?
-                <a href="" className={styles.link}>
+                <Link href="" className={styles.link}>
                   Reset Password
-                </a>
+                </Link>
               </div>
               <div className={styles.linksItem}>
                 New to HBO+?
-                <a href="/signup" className={styles.link}>
+                <Link href="/signup" className={styles.link}>
                   Sign up
-                </a>
+                </Link>
               </div>
             </div>
           </form>
