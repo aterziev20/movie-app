@@ -1,0 +1,109 @@
+.movieRow {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 3%;
+  cursor: grab;
+}
+
+.movieType {
+  font-size: 2rem;
+  margin-bottom: 1%;
+}
+
+.movieListContainer {
+  position: relative;
+}
+
+.movieList {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* hides scrollbar in IE and Edge */
+  scrollbar-width: none; /* hides scrollbar in Firefox */
+  padding-bottom: 10px; /* add some bottom padding to avoid last image being partially cut off */
+}
+
+.movieList::-webkit-scrollbar {
+  display: none; /* hides scrollbar in WebKit browsers */
+}
+
+.movie {
+  flex: 0 0 auto;
+}
+
+.movieInfo {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.movieInfo h2 {
+  display: flex;
+  text-decoration: none;
+  color: #cacaca;
+  font-size: 1rem;
+  margin: 1% 1%;
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+}
+
+.imageWrapper {
+  position: relative;
+  display: flex;
+  border: 2px solid transparent;
+  border-radius: 2%;
+  padding: 1%;
+  margin-top: 2%;
+  transition: all 0.2s ease-in-out;
+  filter: brightness(75%)
+}
+
+.imageWrapper:hover {
+  border: 2px solid #5d00ff;
+  filter: brightness(100%)
+}
+
+.imageRank {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 5%;
+  padding: 3px 8px;
+  z-index: 1;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.favoriteButton {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+  background-color: #c2c2c2;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  padding-top: 4px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.imageWrapper:hover .favoriteButton {
+  display: block;
+}
+
+.imageWrapper:hover .favoriteButton:hover {
+  background-color: #ffffff;
+  transform: scale(1.1);
+}

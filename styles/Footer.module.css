@@ -1,0 +1,21 @@
+.footerLinks {
+  position:relative;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-right: 5%;
+  margin-top: 8%;
+  padding-bottom: 3%;
+}
+
+.link {
+  font-size: 0.9rem;
+  color: #c2c2c2;
+  text-decoration: none;
+  font-family: sans-serif;
+  transition: all .1s ease-in;
+}
+
+.link:hover {
+  color: #ffffff;
+}

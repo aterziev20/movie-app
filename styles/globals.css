@@ -1,0 +1,35 @@
+html {
+  background: hsla(240, 100%, 21%, 1);
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 30%, rgb(24, 0, 80) 80%);
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.mySwiper .swiper-button-prev {
+  color: #a1a1a1;
+  height: 100%;
+  top: 0;
+  left: 5;
+}
+
+.mySwiper .swiper-button-next {
+  color: #a1a1a1;
+  height: 100%;
+  top: 0;
+  right: 5;
+  width: 3%;
+}
+.mySwiper .swiper-button-prev:hover {
+  color: #ffffff;
+}
+
+.mySwiper .swiper-button-next:hover {
+  color: #ffffff;
+}

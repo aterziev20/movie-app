@@ -1,0 +1,162 @@
+.navMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navMenu.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  padding: 1% 0;
+}
+
+.navContainer {
+  display: flex;
+  flex: 2;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-left: 7%;
+}
+
+.logo {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+.leftContainer {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 5%;
+}
+
+.link {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #c2c2c2;
+  text-decoration: none;
+  font-family: sans-serif;
+  transition: all 0.1s ease-in;
+}
+
+.link:hover {
+  color: #ffffff;
+}
+
+.rightContainer {
+  display: flex;
+  flex: 3;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+  margin-right: 5%;
+}
+
+.backgroundSlides {
+  margin: 0;
+  height: 100vh;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 5% center;
+}
+.slide1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 10%,
+      rgba(0, 0, 0, 1)
+    ),
+    url("/images/avatar.png");
+  object-fit: cover;
+}
+
+.slide2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 10%,
+      rgba(0, 0, 0, 1)
+    ),
+    url("/images/babylon.png");
+  object-fit: cover;
+}
+
+.slide3 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 10%,
+      rgba(0, 0, 0, 1)
+    ),
+    url("/images/creed.png");
+  object-fit: cover;
+}
+
+
+.infoWrapper {
+  position: absolute;
+  bottom: 20%;
+  left: 3%;
+  text-align: left;
+}
+
+.title {
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-left: 0.5%;
+  max-width: 40%;
+} 
+
+
+.playButton {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 70px;
+  height: 70px;
+  padding: 2px 0 0 2px;
+  cursor: pointer;
+}
+
+.playButton:hover {
+  border: 2px solid #5d00ff;
+}
+
+
+.infoButton {
+  margin-left: 30px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.infoButton:hover {
+  border: 2px solid #5d00ff;
+}
