@@ -33,57 +33,60 @@ export default function Signup() {
         </Link>
       </div>
       <main>
-        <div className={styles.container}>
-          <form onSubmit={handleSignup} className={styles.form}>
-            <h1 className={styles.title}>Sign up for HBO+</h1>
-            <p className={styles.text}>
-              Create your HBO+ account to watch your favourite shows and movies.
-            </p>
-            <div className={styles.inputContainer}>
-              <input
-                type="email"
-                id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className={styles.input}
-                placeholder="Email address"
-                required
-              />
-            </div>
-            <div className={styles.inputContainer}>
-              <input
-                type="password"
-                id="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className={styles.input}
-                placeholder="Password"
-                required
-              />
-            </div>
-            <div className={styles.inputContainer}>
-              <input
-                type="password"
-                id="confirmPassword"
-                value={confirmPassword}
-                onChange={(e) => setConfirmPassword(e.target.value)}
-                className={styles.input}
-                placeholder="Confirm Password"
-                required
-              />
-            </div>
-            <button type="submit" className={styles.button}>
-              Sign up
-            </button>
-            <div className={styles.linksContainer}>
-              <div className={styles.linksItem}>
-                Already have an account?
-                <Link href="/login" className={styles.link}>
-                  Log in
-                </Link>
+        <div className={styles.center}>
+          <div className={styles.container}>
+            <form onSubmit={handleSignup} className={styles.form}>
+              <h1 className={styles.title}>Sign up for HBO+</h1>
+              <p className={styles.text}>
+                Create your HBO+ account to watch your favourite shows and
+                movies.
+              </p>
+              <div className={styles.inputContainer}>
+                <input
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className={styles.input}
+                  placeholder="Email address"
+                  required
+                />
               </div>
-            </div>
-          </form>
+              <div className={styles.inputContainer}>
+                <input
+                  type="password"
+                  id="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className={styles.input}
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div className={styles.inputContainer}>
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  className={styles.input}
+                  placeholder="Confirm Password"
+                  required
+                />
+              </div>
+              <button type="submit" className={styles.button}>
+                Sign up
+              </button>
+              <div className={styles.linksContainer}>
+                <div className={styles.linksItem}>
+                  Already have an account?
+                  <Link href="/login" className={styles.link}>
+                    Log in
+                  </Link>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </main>
       <Footer />
