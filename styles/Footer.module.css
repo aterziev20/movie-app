@@ -39,7 +39,6 @@
     gap: 2rem;
     margin-right: 5%;
     margin-top: 10%;
-    padding-bottom: 5%;
   }
   
 }
@@ -47,7 +46,6 @@
 @media only screen and (max-width: 425px) {
   .footerLinks {
     margin-top: 10%;
-    padding-bottom: 15%;
   }
   .link {
     font-size: 0.8rem;
