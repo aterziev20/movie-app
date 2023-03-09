@@ -1,5 +1,5 @@
 .footerLinks {
-  position:relative;
+  position: relative;
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
@@ -13,9 +13,44 @@
   color: #c2c2c2;
   text-decoration: none;
   font-family: sans-serif;
-  transition: all .1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 .link:hover {
   color: #ffffff;
 }
+
+@media only screen and (min-width: 2000px) {
+  .footerLinks {
+    gap: 3rem;
+  }
+
+  .link {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .footerLinks {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-right: 5%;
+    margin-top: 10%;
+    padding-bottom: 5%;
+  }
+  
+}
+
+@media only screen and (max-width: 425px) {
+  .footerLinks {
+    margin-top: 10%;
+    padding-bottom: 15%;
+  }
+  .link {
+    font-size: 0.8rem;
+  }
+  }
+

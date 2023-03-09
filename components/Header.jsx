@@ -24,9 +24,6 @@ const Header = () => {
             delay: 3500,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
@@ -41,10 +38,10 @@ const Header = () => {
                   feels is his home.
                 </p>
                 <div className={styles.buttonWrapper}>
-                  <button className={styles.playButton}>
+                  <button className={styles.playButton} title="Play">
                     <FaPlay />
                   </button>
-                  <button className={styles.infoButton}>
+                  <button className={styles.infoButton} title="More Info">
                     <span>More Info</span>
                   </button>
                 </div>
@@ -61,10 +58,10 @@ const Header = () => {
                   decadence and depravity in early Hollywood.
                 </p>
                 <div className={styles.buttonWrapper}>
-                  <button className={styles.playButton}>
+                  <button className={styles.playButton} title="Play">
                     <FaPlay />
                   </button>
-                  <button className={styles.infoButton}>
+                  <button className={styles.infoButton} title="More Info">
                     <span>More Info</span>
                   </button>
                 </div>
@@ -81,10 +78,10 @@ const Header = () => {
                   resurfaces, the face-off is more than just a fight.
                 </p>
                 <div className={styles.buttonWrapper}>
-                  <button className={styles.playButton}>
+                  <button className={styles.playButton} title="Play">
                     <FaPlay />
                   </button>
-                  <button className={styles.infoButton}>
+                  <button className={styles.infoButton} title="More Info">
                     <span>More Info</span>
                   </button>
                 </div>

@@ -16,7 +16,7 @@ const HeaderTVShows = () => {
     <header>
       <NavMenu />
       <div className={styles.background}>
-      <Swiper
+        <Swiper
           slidesPerView={1}
           spaceBetween={30}
           loop={true}
@@ -24,9 +24,6 @@ const HeaderTVShows = () => {
           autoplay={{
             delay: 3500,
             disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
           }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
@@ -42,10 +39,10 @@ const HeaderTVShows = () => {
                     continues.
                   </p>
                   <div className={styles.buttonWrapper}>
-                    <button className={styles.playButton}>
+                    <button className={styles.playButton} title="Play">
                       <FaPlay />
                     </button>
-                    <button className={styles.infoButton}>
+                    <button className={styles.infoButton} title="More Info">
                       <span>More Info</span>
                     </button>
                   </div>
@@ -62,10 +59,10 @@ const HeaderTVShows = () => {
                   the galaxy, far from the authority of the New Republic.
                 </p>
                 <div className={styles.buttonWrapper}>
-                  <button className={styles.playButton}>
+                  <button className={styles.playButton} title="Play">
                     <FaPlay />
                   </button>
-                  <button className={styles.infoButton}>
+                  <button className={styles.infoButton} title="More Info">
                     <span>More Info</span>
                   </button>
                 </div>
@@ -81,10 +78,10 @@ const HeaderTVShows = () => {
                   turns to manufacturing and selling methamphetamine.
                 </p>
                 <div className={styles.buttonWrapper}>
-                  <button className={styles.playButton}>
+                  <button className={styles.playButton} title="Play">
                     <FaPlay />
                   </button>
-                  <button className={styles.infoButton}>
+                  <button className={styles.infoButton} title="More Info">
                     <span>More Info</span>
                   </button>
                 </div>

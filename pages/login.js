@@ -60,7 +60,7 @@ export default function Login() {
               />
             </div>
             <button type="submit" className={styles.button}>
-              Login
+              Log in
             </button>
             <div className={styles.linksContainer}>
               <div className={styles.linksItem}>

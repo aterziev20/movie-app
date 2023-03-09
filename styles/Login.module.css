@@ -1,12 +1,12 @@
 .nav {
-    padding: 1% 4%;
-    width: 92%;
-    border-bottom: 0.1px solid rgba(77, 77, 77, 0.7);
+  padding: 1% 4%;
+  width: 92%;
+  border-bottom: 0.1px solid rgba(77, 77, 77, 0.7);
 }
 
 .logo {
-    color:#eeeeee;
-    font-size: 2rem;
+  color: #eeeeee;
+  font-size: 2rem;
 }
 
 .container {
@@ -22,56 +22,145 @@
 .title {
   font-size: 1.5rem;
   font-weight: normal;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .text {
-    line-height: 1.5rem;
-    max-width: 90%;
+  line-height: 1.5rem;
+  max-width: 90%;
 }
 
 .input {
-    width: 85%;
-    font-size: 1rem;
-    padding: 4%;
-    margin-bottom: 5%;
-    border: 1px solid transparent;
-    outline: none;
-    border-radius: 5px;
-    background-color: #30333E;
-    color: #eeeeee;
-    transition:all 0.2s ease-in-out;
+  width: 85%;
+  font-size: 1rem;
+  padding: 4%;
+  margin-bottom: 5%;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 5px;
+  background-color: #30333e;
+  color: #eeeeee;
+  transition: all 0.2s ease-in-out;
 }
 
 .input:focus {
-    border: 1px solid #8b8b8b;
+  border: 1px solid #8b8b8b;
 }
 
 .button {
-    width: 94%;
-    border-radius: 5px;
-    font-size: 1rem;
-    padding: 4%;
-    background-color: #0072D2;
-    color: #eeeeee;
+  width: 94%;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 4%;
+  background-color: #0072d2;
+  color: #eeeeee;
+  border-color: transparent;
 }
 
 .linksContainer {
-    margin: 7% 0;
+  margin: 7% 0;
 }
 
-.linksItem{
-    color: #c2c2c2;
-    margin-bottom: 3%;
+.linksItem {
+  color: #c2c2c2;
+  margin-bottom: 3%;
 }
 
 .link {
-    margin: 0% 3%;
-    color: #eeeeee;
-    transition: all 0.2s ease-in-out;
+  margin: 0% 3%;
+  color: #eeeeee;
+  transition: all 0.2s ease-in-out;
 }
 
 .link:hover {
-    text-decoration: underline;
-    color: #2ea1ff;
+  text-decoration: underline;
+  color: #2ea1ff;
 }
+
+@media only screen and (min-width: 2000px) {
+  .logo {
+    font-size: 5rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .text {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .input {
+    font-size: 2rem;
+    padding: 5%;
+    margin-bottom: 7%;
+    border: 2px solid transparent;
+  }
+
+  .input:focus {
+    border: 2px solid #8b8b8b;
+  }
+
+  .button {
+    width: 96%;
+    font-size: 2rem;
+    padding: 5%;
+  }
+
+  .linksContainer {
+    margin: 9% 0;
+  }
+  .linksItem {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .container {
+    max-width: 40%;
+    margin: 2% 30%;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+      .logo {
+        font-size: 1.5rem;
+      }
+      
+      .title {
+        font-size: 1.5rem;
+      }
+      
+      .text {
+        line-height: 1rem;
+        font-size: 1rem;
+      }
+      
+      .input {
+        font-size: 1rem;
+        padding: 5%;
+      }
+    
+      .button {
+        font-size: 1rem;
+        padding: 5%;
+      }
+      
+      .linksContainer {
+        margin: 7% 0;
+      }
+      
+      .linksItem {
+        margin-bottom: 5%;
+        font-size: 0.8rem;
+      }
+  }

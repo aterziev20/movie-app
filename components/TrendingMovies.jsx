@@ -80,6 +80,38 @@ export default function TrendingMovies({
         <Swiper
           slidesPerView={6}
           slidesPerGroup={6}
+          breakpoints={{
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+            },
+            // when window width is >= 380px
+            400: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+            },
+            // when window width is >= 576px
+            576: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 4,
+              slidesPerGroup: 4,
+            },
+            // when window width is >= 1024px
+            1024: {
+              slidesPerView: 5,
+              slidesPerGroup: 5,
+            },
+            // when window width is >= 1440px
+            1440: {
+              slidesPerView: 6,
+              slidesPerGroup: 6,
+            },
+          }}
           navigation={true}
           className="mySwiper"
         >
@@ -100,6 +132,7 @@ export default function TrendingMovies({
                       <button
                         className={styles.favoriteButton}
                         onClick={() => handleAddToMyList(movie)}
+                        title="Add to My List"
                       >
                         {buttonChange(movie)}
                       </button>

@@ -1,6 +1,6 @@
 html {
   background: hsla(240, 100%, 21%, 1);
-  background: linear-gradient(to bottom, rgb(0, 0, 0) 30%, rgb(24, 0, 80) 80%);
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 40%, rgb(30, 0, 60) 80%);
   color: #ffffff;
   font-family: sans-serif;
 }
