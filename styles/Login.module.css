@@ -130,7 +130,7 @@
 @media only screen and (width <= 768px) {
   .container {
     width: 50%;
-    margin: 10% 0;
+    margin: 20% 0;
   }
 
   .logo {
