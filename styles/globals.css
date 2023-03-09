@@ -3,10 +3,14 @@ html {
   background: linear-gradient(to bottom, rgb(0, 0, 0) 40%, rgb(30, 0, 60) 80%);
   color: #ffffff;
   font-family: sans-serif;
+  min-height: 100%;
+  position:relative;
 }
 
 body {
   margin: 0;
+  height: 100%;
+  width: 100%;
 }
 a {
   text-decoration: none;
